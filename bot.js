@@ -343,7 +343,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-	 var prefix = "b!"
+	 var prefix = "3"
             if (message.content.startsWith(prefix + "help")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
