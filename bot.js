@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "2";
+const prefix = "3";
 /////////////////////////
 ////////////////////////
 
@@ -347,13 +347,12 @@ client.on('message', message => {
             if (message.content.startsWith(prefix + "help")) {
      let embed = new Discord.RichEmbed()
 .setThumbnail(message.author.avatarURL)
-.addField('     **البريفكس [$help] ** ')
-.addField('     **(1)-$play** ' ,' **تفتح موسيقي** ')
-.addField('     **(2)-$skip**  ' ,' **تحول للاغنيه البعدها** ')
-.addField('     **(3)-$stop** ' , '**تخرج البوت من الروم**') 
-.addField('     **(4)-$pause** ' , '**ايقاف الاغنيه**') 
-.addField('     **(5)-$resume** ' ,' ** تشغيل الاغنيه** ')
-.addField('     **(6)-$vol** ' ,' ** تعلي او توطي الصوت** ')
+.addField('     **(1)-3play** ' ,' **تفتح موسيقي** ')
+.addField('     **(2)-3skip**  ' ,' **تحول للاغنيه البعدها** ')
+.addField('     **(3)-3stop** ' , '**تخرج البوت من الروم**') 
+.addField('     **(4)-3pause** ' , '**ايقاف الاغنيه**') 
+.addField('     **(5)-3resume** ' ,' ** تشغيل الاغنيه** ')
+.addField('     **(6)-3vol** ' ,' ** تعلي او توطي الصوت** ')
 .setColor('#ff0004')
   message.channel.sendEmbed(embed);
     }
@@ -363,10 +362,10 @@ client.on('ready', () => {
    console.log(`----------------`);
       console.log(`Desert Bot- Script By : EX Clan`);
         console.log(`----------------`);
-      console.log(`ON ${client.guilds.size} Servers '     Script By : EX Clan ' `);
+      console.log(`ON ${client.guilds.size} Servers '     Script By : t ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`1play | Last Music`,"http://twitch.tv/Death Shop")
+client.user.setGame(`3play | crown server`,"http://twitch.tv/t")
 client.user.setStatus("dnd")
 });
 
